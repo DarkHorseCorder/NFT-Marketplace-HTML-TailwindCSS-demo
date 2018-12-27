@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+<body class = "bg-black">
+	<!-- Navbar goes here -->
+
+		<nav class="shadow-lg bg-black" id="navbar" style="overflow: hidden;  padding: 10px 10px;  transition: 0.4s;  position: fixed;  width: 100%;  top: 0;  z-index: 99;">
+			<div class="max-w-6xl mx-auto px-4">
+				<div class="flex justify-between">
+					<div class="flex space-x-7">
+						<a href="#" class="flex items-center py-4 px-2" >
+							<img src="logo.png" alt="Logo" style = "width : 150px;" id="logo">
+						</a>
+					</div>
+					<!-- Secondary Navbar items -->
+					<div class="hidden md:flex items-center space-x-3 ">
+						<a class="circled" href="https://medium.com/@unholygodsbrotherhood" target="_blank">
+					      <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="red" class="svg-inline--fa fa-medium fa-w-14 fa-3x"><path d="M0 32v448h448V32H0zm372.2 106.1l-24 23c-2.1 1.6-3.1 4.2-2.7 6.7v169.3c-.4 2.6.6 5.2 2.7 6.7l23.5 23v5.1h-118V367l24.3-23.6c2.4-2.4 2.4-3.1 2.4-6.7V199.8l-67.6 171.6h-9.1L125 199.8v115c-.7 4.8 1 9.7 4.4 13.2l31.6 38.3v5.1H71.2v-5.1l31.6-38.3c3.4-3.5 4.9-8.4 4.1-13.2v-133c.4-3.7-1-7.3-3.8-9.8L75 138.1V133h87.3l67.4 148L289 133.1h83.2v5z" class=""></path></svg>
+					    </a>
+					    <a class="circled" href="https://twitter.com/UnholyGodsBH" target="_blank">
+					        <svg viewBox="0 0 33 33" width="25" height="25" xmlns="http://www.w3.org/2000/svg" fill="red" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M 32,6.076c-1.177,0.522-2.443,0.875-3.771,1.034c 1.355-0.813, 2.396-2.099, 2.887-3.632 c-1.269,0.752-2.674,1.299-4.169,1.593c-1.198-1.276-2.904-2.073-4.792-2.073c-3.626,0-6.565,2.939-6.565,6.565 c0,0.515, 0.058,1.016, 0.17,1.496c-5.456-0.274-10.294-2.888-13.532-6.86c-0.565,0.97-0.889,2.097-0.889,3.301 c0,2.278, 1.159,4.287, 2.921,5.465c-1.076-0.034-2.088-0.329-2.974-0.821c-0.001,0.027-0.001,0.055-0.001,0.083 c0,3.181, 2.263,5.834, 5.266,6.438c-0.551,0.15-1.131,0.23-1.73,0.23c-0.423,0-0.834-0.041-1.235-0.118 c 0.836,2.608, 3.26,4.506, 6.133,4.559c-2.247,1.761-5.078,2.81-8.154,2.81c-0.53,0-1.052-0.031-1.566-0.092 c 2.905,1.863, 6.356,2.95, 10.064,2.95c 12.076,0, 18.679-10.004, 18.679-18.68c0-0.285-0.006-0.568-0.019-0.849 C 30.007,8.548, 31.12,7.392, 32,6.076z"></path></g></svg>
+					    </a>
+					    <a class="circled" href="https://discord.com/invite/pEWjcUjktF" target="_blank">
+					        <svg width="25" height="25" viewBox="0 0 71 55" fill="red" xmlns="http://www.w3.org/2000/svg"> <path d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z"></path></svg>
+					    </a>
+						<a href="#" class="py-2 px-2 font-medium text-red-500  rounded transition duration-300">PEOVENANCE</a>
+						<a href="#" class="py-2 px-2 font-medium text-red-500 border-solid border-color-red rounded transition duration-300">MINT</a>
+					</div>
+					<!-- Mobile menu button -->
+					<div class="md:hidden flex items-center">
+						<button class="outline-none mobile-menu-button">
+						<svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					</div>
+				</div>
+			</div>
+			<!-- mobile menu -->
+			<div class="hidden mobile-menu">
+				<ul class="text-white text-right">
+					<li class="active"><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Medium</a></li>
+					<li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Twitter</a></li>
+					<li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Discord</a></li>
+					<li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">PEOVENANCE</a></li>
+					<li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">MINT</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="mt-56">
+			<div class="flex justify-center">
+				<img class = "w-42 mx-auto md:mx-0 md:w-26" src="logo.png">
+			</div>
+			
+			<div class="my-auto">
+				<p class = "text-3xl md:text-6xl text-bold text-white text-center" style="font-family: Gilbert Qualifi Demo;">UNHOLY GODS</p>
+				<p class = "text-bold text-white text-center" style="font-family: Gilbert Qualifi Demo;">WHAT  HAPPENS  IN  HELL</p>
+				<p class="text-2xl md:text-5xl text-red-500 text-bold text-center" style="font-family: Gilbert Qualifi Demo;">STAYS   IN   HELL</p>
+			</div>
+		</div>
+		<div class="justify-center mx-4 mt-12 mb-12 lg:mx-12 lg:mt-12 md:mt-8 lg:mb-48 md:mb-12">
+			<p class="text-white text-3xl my-4 lg:text-6xl text-center lg:mx-96 lg:mt-16 md:mt-8" style="font-family: Gilbert Qualifi Demo;">DEATH WELCOMES YOU AMONG</p>
+			<p class="text-red-500 text-3xl my-4 lg:text-6xl text-center lg:mx-96 lg:mb-16 md:mb-8" style="font-family: Gilbert Qualifi Demo;">THE BROTHERHOOD OF THE UNHOLY GODS</p>
+			<p class="text-white  mx-8 lg:text-2xl text-center lg:mx-96" style="font-family: Arial;">The Unholy Gods is a secret brotherhood who draw their strength from the dead people that they cursed. This clan controls the world since time immemorial, sowing disorder and chaos through the ages. Are you ready to make the necessary sacrifices to gain such power?</p>
+		</div>
+		<div class="lg:mt-8 lg:w-full grid lg:grid-cols-6 md:grid-cols-3 h-max">
+			<div class="h-24 md:h-max lg:h-max bg-red mr-0 w-full">
+				<div class="h-12 md:h-48 lg:h-48 lg:align-bottom relative lg:relative md:align-bottom md:relative">
+					<p class = "text-2xl text-bold text-red-500 absolute inset-x-0 bottom-0 lg:mt-0 md:mt-0 text-center lg:text-left lg:absolute lg:inset-x-0 lg:bottom-0 lg:ml-8 md:text-left md:absolute md:inset-x-0 md:bottom-0 md:ml-8" style="font-family: Gilbert Qualifi Demo;">Sales</p>
+				</div>
+				<div class="border-8 border-red-500"></div>
+				<div class = "h-12 md:h-48 lg:h-48">
+					<p class = "text-2xl text-bold text-red-500 mb-8 text-center lg:text-left lg:ml-8 md:text-left md:ml-8" style="font-family: Gilbert Qualifi Demo;">Progression</p>
+				</div>
+			</div>
+			<div class="text-center mt-16 lg:mt-0 md:mt-0">
+				<div class="h-24 md:h-48 lg:h-48">
+					<p class = "text-3xl text-bold text-white font-bold" style="font-family: Gilbert Qualifi Demo;">Body Sacrifice</p>
+					<p class = "text-6xl text-bold text-red-500 lg:pt-6" style="font-family: Arial Black;">25%</p>
+				</div>
+				<div class="border-8 border-red-500 mt-16 md:mt-0 hidden lg:block md:block"></div>
+				<section class=" hero container w-24 md:w-32 mx-auto md:pb-10 lg:pb-10 lg:-mt-12 md:-mt-12 md:-mt-16">
+				    <img class="mx-auto" src="icon.png" alt="screenshot" >
+				</section>
+				<div class="h-56 md:h-48 lg:h-48">
+					<p class = "text-3xl text-bold text-white font-bold my-4" style="font-family: Gilbert Qualifi Demo;">1 Holder get</p>
+					<p class = "text-3xl text-bold text-white font-bold my-4" style="font-family: Gilbert Qualifi Demo;">6% of the sales</p>
+					<p class = "text-3xl text-bold text-white mx-auto border-solid border-4 w-min" style="font-family: Arial Black;">~19000$</p>
+				</div>
+			</div>
+			<div class="text-center mr-0">
+				<div class="h-24 md:h-48 lg:h-48">
+					<p class = "text-3xl text-bold text-white font-bold" style="font-family: Gilbert Qualifi Demo;">Mind Sacrifice</p>
+					<p class = "text-6xl text-bold text-red-500 lg:pt-6" style="font-family: Arial Black;">50%</p>
+				</div>
+				<div class="border-8 border-red-500 mt-16 md:mt-0 hidden lg:block md:block"></div>
+				<section class=" hero container w-24 md:w-32 mx-auto md:pb-10 lg:pb-10 lg:-mt-12 md:-mt-12 md:-mt-16">
+				    <img class="mx-auto" src="icon.png" alt="screenshot" >
+				</section>
+				<div class="h-56 md:h-48 lg:h-48">
+					<p class = "text-3xl text-bold text-white font-bold my-4" style="font-family: Gilbert Qualifi Demo;">2 Holders Share</p>
+					<p class = "text-3xl text-bold text-white font-bold my-4" style="font-family: Gilbert Qualifi Demo;">5% of the sales</p>
+					<p class = "text-3xl text-bold text-white mx-auto  border-solid border-4 w-min" style="font-family: Arial Black;">~31000$</p>
+				</div>
+			</div>
+			<div class="text-center mr-0">
+				<div class="h-24 md:h-48 lg:h-48">
+					<p class = "text-3xl text-bold text-white font-bold" style="font-family: Gilbert Qualifi Demo;">Heart Sacrifice</p>
+					<p class = "text-6xl text-bold text-red-500 lg:pt-6" style="font-family: Arial Black;">75%</p>
+				</div>
+				<div class="border-8 border-red-500 mt-16 md:mt-0 hidden lg:block md:block"></div>
+				<section class=" hero container w-24 md:w-32 mx-auto md:pb-10 lg:pb-10 lg:-mt-12 md:-mt-12 md:-mt-16">
+				    <img class="mx-auto" src="icon.png" alt="screenshot" >
+				</section>
+				<div class="h-56 md:h-48 lg:h-48">
+					<p class = "text-3xl text-bold text-white font-bold my-4" style="font-family: Gilbert Qualifi Demo;">3 Holders Share</p>
+					<p class = "text-3xl text-bold text-white font-bold my-4" style="font-family: Gilbert Qualifi Demo;">4% of the sales</p>
+					<p class = "text-3xl text-bold text-white mx-auto border-solid border-4 w-min" style="font-family: Arial Black;">~38000$</p>
+				</div>
+			</div>
+			<div class="text-center mr-0">
+				<div class="h-24 md:h-48 lg:h-48">
+					<p class = "text-3xl text-bold text-white font-bold" style="font-family: Gilbert Qualifi Demo;">Soul Sacrifice</p>
+					<p class = "text-6xl text-bold text-red-500 lg:pt-6" style="font-family: Arial Black;">100%</p>
+				</div>
+				<div class="border-8 border-red-500 mt-16 md:mt-0 hidden lg:block md:block"></div>
+				<section class=" hero container w-24 md:w-32 mx-auto md:pb-10 lg:pb-10 lg:-mt-12 md:-mt-12 md:-mt-16">
+				    <img class="mx-auto" src="icon.png" alt="screenshot" >
+				</section>
+				<div class="h-56 md:h-48 lg:h-48">
+					<p class = "text-3xl text-bold text-white font-bold my-4" style="font-family: Gilbert Qualifi Demo;">4 Holders Share</p>
+					<p class = "text-3xl text-bold text-white font-bold my-4" style="font-family: Gilbert Qualifi Demo;">3% of the sales</p>
+					<p class = "text-3xl text-bold text-white mx-auto border-solid border-4 w-min" style="font-family: Arial Black;">~38000$</p>
+				</div>
+			</div>
+			<div class=" mr-0 hidden lg:block md:block">
+				<div class="h-48"></div>
+				<div class="border-8 border-red-500"></div>
+			</div>
+		</div>
+		<div class="justify-center lg:mt-12">
+			<p class="text-red-500 text-2xl text-center" style="font-family: Arial Black;">Sacrificial Pact function is implemented in the Smart Contract and will automatically be executed at these different milestones</p>
+			
+		</div>
+		<div class="justify-center mx-4 mt-12 mb-12 lg:mx-12 lg:mt-12 md:mt-8 lg:mb-48 md:mb-12">
+			<p class="text-white text-3xl my-4 lg:text-6xl text-center lg:mx-96 lg:mt-16 md:mt-8" style="font-family: Gilbert Qualifi Demo;">BE PART OF THE</p>
+			<p class="text-red-500 text-3xl my-4 lg:text-6xl text-center lg:mx-96 lg:mb-16 md:mb-8" style="font-family: Gilbert Qualifi Demo;">BROTHERHOOD</p>
+			<p class="text-white  mx-8 lg:text-2xl text-center lg:mx-96" style="font-family: Arial;">By minting an Unholy God you are not just buying a unique NFT, you are also offering your soul to the Brotherhood ... with all the benefits that this offers. You can indeed have exclusive advantages in the real world, the digital world… and the afterlife depending on the rarity of your Unholy God.</p>
+		</div>
+		<div class="align-items-center h-100 justify-center">
+		  <div class="slider lg:my-8">
+		    <div class="slide-track">
+		      <div class="slide">
+		        <img src="image/image (1).jpg" height="830" width="450" class = "responsive" alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (2).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (3).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (4).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (5).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (6).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (7).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (1).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (2).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (3).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (4).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (5).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (6).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (7).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		    </div>
+		  </div>
+		  <div class="slider lg:my-8">
+		    <div class="slide-track-reverse">
+		      <div class="slide">
+		        <img src="image/image (1).jpg" height="300" width="450" class = "responsive" alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (2).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (3).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (4).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (5).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (6).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (7).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (1).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (2).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (3).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (4).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (5).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (6).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (7).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		    </div>
+		  </div>
+		  <div class="slider lg:my-8">
+		    <div class="slide-track">
+		      <div class="slide">
+		        <img src="image/image (1).jpg" height="300" width="450" class = "responsive" alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (2).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (3).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (4).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (5).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (6).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (7).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (1).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (2).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (3).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (4).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (5).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (6).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		      <div class="slide">
+		        <img src="image/image (7).jpg" height="300" width="450" class = "responsive"  alt="" />
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class=" justify-items-center w-100">
+		  <div class="p-4 mt-4">
+		    <div class="">
+		    	<div class="flex justify-center">
+		    		<img src="ladiesfirst.png" height="264" width="680">
+		    		
+		    	</div>
+		    	<p class="text-white  mx-8 lg:text-2xl text-center lg:mx-64" style="font-family: Arial;">The Unholy Godess is the first step of the big invasion project directed by the “Cursed Studio”. Do not underestimate these 6666 beauties, you could succumb to their charm ... and never come back among the living. Each of them is unique and generated by a combination of random characteristics defining different levels of rarity such as skin, eyes, mouth, accessories, demonic properties...</p>
+		      <div class="flex flex-col md:grid md:grid-cols-12 grid-cols-18 text-gray-50">
+
+		        <div class="flex md:contents">
+		          <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+		            <div class="h-full w-6 flex items-center justify-center">
+		              <div class="h-full w-2 bg-gray-50 pointer-events-none"></div>
+		            </div>
+		            <div class="w-10 h-10 absolute top-1/2 -mt-6 rounded-full bg-red-500 shadow text-center font-black text-3xl -ml-2">
+		              1
+		            </div>
+		          </div>
+		          <div class="relative bg-red-500 lg:col-start-4 md:col-start-4 col-start-5 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+		            <div class="absolute bg-red-500 w-5 h-5 -ml-6 my-auto timeline-pointer"></div>
+		            <h3 class="font-semibold text-lg mb-1">Marketing and communnity growth : Giveaways + private sales</h3>
+		          </div>
+		        </div>
+
+		        <div class="flex md:contents">
+		          <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+		            <div class="h-full w-6 flex items-center justify-center">
+		              <div class="h-full w-2 bg-gray-50 pointer-events-none"></div>
+		            </div>
+		            <div class="w-10 h-10 absolute top-1/2 -mt-6 rounded-full bg-red-500 shadow text-center font-black text-3xl -ml-2">
+		              2
+		            </div>
+		          </div>
+		          <div class="relative bg-red-500 lg:col-start-4 md:col-start-4 col-start-5 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+		            <div class="absolute bg-red-500 w-5 h-5 -ml-6 my-auto timeline-pointer"></div>
+		            <h3 class="font-semibold text-lg mb-1">Marketing and communnity growth : Giveaways + private sales</h3>
+		          </div>
+		        </div>
+
+		        <div class="flex md:contents">
+		          <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+		            <div class="h-full w-6 flex items-center justify-center">
+		              <div class="h-full w-2 bg-gray-50 pointer-events-none"></div>
+		            </div>
+		            <div class="w-10 h-10 absolute top-1/2 -mt-6 rounded-full bg-red-500 shadow text-center font-black text-3xl -ml-2">
+		              3
+		            </div>
+		          </div>
+		          <div class="relative bg-red-500 lg:col-start-4 md:col-start-4 col-start-5 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+		            <div class="absolute bg-red-500 w-5 h-5 -ml-6 my-auto timeline-pointer"></div>
+		            <h3 class="font-semibold text-lg mb-1 text-gray-50">Summoning of the first wave of demons : The Unholy Godesses</h3>
+		          </div>
+		        </div>
+
+		        <div class="flex md:contents">
+		          <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+		            <div class="h-full w-6 flex items-center justify-center">
+		              <div class="h-full w-2 bg-gray-50 pointer-events-none"></div>
+		            </div>
+		            <div class="w-10 h-10 absolute top-1/2 -mt-6 rounded-full bg-red-500 shadow text-center font-black text-3xl -ml-2">
+		              4
+		            </div>
+		          </div>
+		          <div class="relative bg-red-500 lg:col-start-4 md:col-start-4 col-start-5 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+		            <div class="absolute bg-red-500 w-5 h-5 -ml-6 my-auto timeline-pointer"></div>
+		            <h3 class="font-semibold text-lg mb-1 text-gray-50">Development of the Brotherhood</h3>
+		          </div>
+		        </div>
+		        <div class="flex md:contents">
+		          <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+		            <div class="h-full w-6 flex items-center justify-center">
+		              <div class="h-full w-2 bg-gray-50 pointer-events-none"></div>
+		            </div>
+		            <div class="w-10 h-10 absolute top-1/2 -mt-6 rounded-full bg-red-500 shadow text-center font-black text-3xl -ml-2">
+		              5
+		            </div>
+		          </div>
+		          <div class="relative bg-red-500 lg:col-start-4 md:col-start-4 col-start-5 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+		            <div class="absolute bg-red-500 w-5 h-5 -ml-6 my-auto timeline-pointer"></div>
+		            <h3 class="font-semibold text-lg mb-1 text-gray-50">Marketplace Invasion</h3>
+		          </div>
+		        </div>
+		        <div class="flex md:contents">
+		          <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+		            <div class="h-full w-6 flex items-center justify-center">
+		              <div class="h-full w-2 bg-gray-50 pointer-events-none"></div>
+		            </div>
+		            <div class="w-10 h-10 absolute top-1/2 -mt-6 rounded-full bg-red-500 shadow text-center font-black text-3xl -ml-2">
+		              6
+		            </div>
+		          </div>
+		          <div class="relative bg-red-500  lg:col-start-4 md:col-start-4 col-start-5 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+		            <div class="absolute bg-red-500 w-5 h-5 -ml-6 my-auto timeline-pointer"></div>
+		            <h3 class="font-semibold text-lg mb-1 text-gray-50">Summoning of the second wave of demons : The Unholy Gods</h3>
+		          </div>
+		        </div>
+		        <div class="flex md:contents">
+		          <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+		            <div class="h-full w-6 flex items-center justify-center">
+		              <div class="h-full w-2 bg-gray-50 pointer-events-none"></div>
+		            </div>
+		            <div class="w-10 h-10 absolute top-1/2 -mt-6 rounded-full bg-red-500 shadow text-center font-black text-3xl -ml-2">
+		              7
+		            </div>
+		          </div>
+		          <div class="relative bg-red-500 lg:col-start-4 md:col-start-4 col-start-5 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full timeline-body">
+		            <div class="absolute bg-red-500 w-5 h-5 -ml-6 my-auto timeline-pointer"></div>
+		            <h3 class="font-semibold text-lg mb-1 text-gray-50">Unleashing the curse worldwide : Development of side projects linked to the UnholyGods universe</h3>
+		          </div>
+		        </div>
+
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class=" font-sans justify-items-center w-90">
+		      <div class="mx-auto lg:mx-24 p-8">
+		         <div class="shadow-md">
+		            <div class="tab w-full overflow-hidden border-t">
+		               <input class="absolute opacity-0" id="tab1" type="radio" name="tabs2">
+		               <label class="block p-5 leading-normal cursor-pointer text-white" for="tab1">What is an NFT?</label>
+		               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+		                  <p class="p-5">NFT stands for “Non-fungible token” and is a cool way of saying it’s a truly unique digital item that YOU can buy, own, and trade.</p>
+		               </div>
+		            </div>
+		            <div class="tab w-full overflow-hidden border-t">
+		               <input class="absolute opacity-0" id="tab2" type="radio" name="tabs2">
+		               <label class="block p-5 leading-normal cursor-pointer text-white" for="tab2">What is Metamask?</label>
+		               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+		                  <p class="p-5">Metamask is a crypto-wallet that can store your Ethereum, and is needed to purchase and mint a Baby Ghost. Having a wallet gives you an Ethereum address (i.e. 0xSPOO….666), this is where your NFT will be stored. Learn more about Metamask and how easy it is to use over here! (https://metamask.io).</p>
+		               </div>
+		            </div>
+		            <div class="tab w-full overflow-hidden border-t">
+		               <input class="absolute opacity-0" id="tab3" type="radio" name="tabs2">
+		               <label class="block p-5 leading-normal cursor-pointer text-white" for="tab3">How to mint with Metamask on a mobile phone?</label>
+		               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+		                  <p class="p-5">If you are using a mobile phone to mint our lovely Baby Ghosts, you need to use the Metamask application built-in browser to mint our NFTs. Therefore, please launch the Metamask application, click the 3 lines on the top left menu in the application and select "Browser". It will open a web browser and you will be able to navigate back to babyghosts.com to do the minting.</p>
+		               </div>
+		            </div>
+		            <div class="tab w-full overflow-hidden border-t">
+		               <input class="absolute opacity-0" id="tab4" type="radio" name="tabs2">
+		               <label class="block p-5 leading-normal cursor-pointer text-white" for="tab4">How to mint with Metamask on a computer?</label>
+		               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+		                  <p class="p-5">If you are using a computer to mint our lovely Baby Ghosts, you just need to connect the Metamask plugin with our website, verify you have enough ETH to do the transaction, then you will be able to click on the Mint button to buy a few Baby Ghosts.</p>
+		               </div>
+		            </div>
+		            <div class="tab w-full overflow-hidden border-t">
+		               <input class="absolute opacity-0" id="tab5" type="radio" name="tabs2">
+		               <label class="block p-5 leading-normal cursor-pointer text-white" for="tab5">Buying NFT for the first time?</label>
+		               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+		                  <p class="p-5">Get the Metamask Chrome or Firefox extension. Load it with ETH through services that allow you to change your money to ETH like Coinbase, Binance or Kraken. Then, click the button "MINT" on the scary banner to connect your wallet and approve the transaction on Metamask. That’s it !</p>
+		               </div>
+		            </div>
+		            <div class="tab w-full overflow-hidden border-t">
+		               <input class="absolute opacity-0" id="tab6" type="radio" name="tabs2">
+		               <label class="block p-5 leading-normal cursor-pointer text-white" for="tab6">Where does my NFT go after I purchase a Baby Ghost?</label>
+		               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+		                  <p class="p-5">Your Baby Ghost NFT will appear in whatever address, or connected wallet you used to purchase the Baby Ghost. You can see your freshly minted NFT card directly on your Opensea.io account.</p>
+		               </div>
+		            </div>
+		            <div class="tab w-full overflow-hidden border-t">
+		               <input class="absolute opacity-0" id="tab7" type="radio" name="tabs2">
+		               <label class="block p-5 leading-normal cursor-pointer text-white" for="tab7">That sounds great, how do I get in?</label>
+		               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+		                  <p class="p-5">Join our Discord (https://discord.gg/BabyGhosts) server or Twitter (https://twitter.com/BabyGhosts_NFT) account and jump in on the conversation & share your ideas!</p>
+		               </div>
+		            </div>
+		            <div class="tab w-full overflow-hidden border-t">
+		               <input class="absolute opacity-0" id="tab8" type="radio" name="tabs2">
+		               <label class="block p-5 leading-normal cursor-pointer text-white" for="tab8">What can I do with my Baby Ghosts / How can I trade them?</label>
+		               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+		                  <p class="p-5">You are free to do anything with them under a non-exclusive license. Baby Ghosts adheres to the ERC-721 standard so you can trade them on platforms like OpenSea.</p>
+		               </div>
+		            </div>
+		            <div class="tab w-full overflow-hidden border-t">
+		               <input class="absolute opacity-0" id="tab9" type="radio" name="tabs2">
+		               <label class="block p-5 leading-normal cursor-pointer text-white" for="tab9">Are Baby Ghosts a good investment?</label>
+		               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+		                  <p class="p-5">Well, yeah! At least we believe that Baby Ghosts have a long life of haunting ahead of them, and will keep growing as the project doesn’t end here! Hopefully Baby Ghosts go to the moon, but like anything in life, don’t spend money you can’t afford not to have.</p>
+		               </div>
+		            </div>
+		            <div class="tab w-full overflow-hidden border-t">
+		               <input class="absolute opacity-0" id="tab10" type="radio" name="tabs2">
+		               <label class="block p-5 leading-normal cursor-pointer text-white" for="tab10">What about Tokenomics?</label>
+		               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+		                  <p class="p-5">We have reserved 100 Baby Ghosts to giveaway. Most of these will be given out after launch and will not occupy the early token ids. We will also use a % of mint sales to occasionally sweep the floor, do giveways, and create merch!</p>
+		               </div>
+		            </div>
+		         	</div>
+		      	</div>
+		   	</div>
+		    <div class="justify-center mx-4 mt-12 mb-12 lg:mx-48 lg:mt-12 md:mt-8 lg:mb-24 md:mb-12">
+				<p class="text-red-500 text-3xl lg:text-6xl my-4 text-center font-bold" style="font-family: Gilbert Qualifi Demo;">SACRIFICIAL PACT</p>
+				<p class="text-white lg:text-2xl text-center " style="font-family: Arial;">When the development of the project reaches different milestones, a part of the earnings will be redistributed among random holders of Unholy Goddesses</p>
+				<ul class="text-white text-left lg:text-2xl my-4">
+					<li><span class="text-3xl" style="font-family: Gilbert Qualifi Demo;">BODY <span class="text-red-500">SACRIFICE</span> (25 %)</span> : 6% redistribution</li>
+					<li><span class="text-3xl" style="font-family: Gilbert Qualifi Demo;">MIND <span class="text-red-500">SACRIFICE</span> (50 %)</span> : 5% redistribution</li>
+					<li><span class="text-3xl" style="font-family: Gilbert Qualifi Demo;">HEART <span class="text-red-500">SACRIFICE</span> (75 %)</span> : 4% redistribution</li>
+					<li><span class="text-3xl" style="font-family: Gilbert Qualifi Demo;">SOUL <span class="text-red-500">SACRIFICE</span> (100 %)</span> : 3% redistribution</li>
+				</ul>
+			</div>
+			<div class="justify-center mx-4 mt-12 mb-12 lg:mx-48 lg:mt-12 md:mt-8 lg:mb-24 md:mb-12">
+				<p class="text-red-500 text-3xl lg:text-6xl my-4 text-center font-bold" style="font-family: Gilbert Qualifi Demo;">WHITELIST AND LAUNCH</p>
+				<p class="text-white lg:text-2xl" style="font-family: Arial;">The launch will take place on the 13th of December 2021 * on the Binance Smart Chain.</p>
+				<p class="text-white lg:text-2xl" style="font-family: Arial;">Whitelist spots will be available for the most involved members of our community (by taking part in <a href="#" class = "text-red-500 underline underline-offset-1">discord</a> discussions, or competing for giveaways on <a href="#" class = "text-red-500 underline underline-offset-1">twitter</a> and <a href="#" class = "text-red-500 underline underline-offset-1">instagram</a> - follow us for more details).</p>
+				<p class="text-white lg:text-2xl" style="font-family: Arial;">Whitelisted members of the brotherhood will be able to mint an Unholy Godess at a discounted price.</p>
+				<p class="text-red-500 text-2xl font-bold" style="font-family: Gilbert Qualifi Demo;">WL Price : 0,2666 BNB</p>
+				<p class="text-red-500 text-2xl font-bold" style="font-family: Gilbert Qualifi Demo;">Launch Price : 0,3666 BNB</p>
+				<p class="text-white lg:text-2xl" style="font-family: Arial;">Prices may vary depending on BNB to USD fluctuation on the day of launch.</p>
+				<p class="text-red-500 text-3xl font-bold" style="font-family: Gilbert Qualifi Demo;">* DEC 14 UPDATE : The launch date is set for December the 17th at 11 PM UTC.</p>
+				<p class="text-red-500 text-center text-3xl font-bold line-through decoration-2" style="font-family: Gilbert Qualifi Demo;">* DEC 13 UPDATE : The launch date has been delayed for a few days, details will be communicated on our social media channels and the discord server.</p>
+			</div>
+			<div class="justify-center mx-4 mt-12 mb-12 lg:mx-48 lg:mt-12 md:mt-8 lg:mb-24 md:mb-12">
+				<p class="text-red-500 text-3xl lg:text-6xl my-4 text-center font-bold" style="font-family: Gilbert Qualifi Demo;">THE TEAM</p>
+				<p class="text-red-500 text-3xl lg:text-4xl my-4 font-bold" style="font-family: Gilbert Qualifi Demo;">THE CURSED STUDIO</p>
+				<p class="text-white lg:text-2xl" style="font-family: Arial;">Is a pyramid with at each end a guardian, making sure everything goes to plan.</p>
+				<ul class="text-white text-left lg:text-2xl my-4">
+					<li><span class="text-red-500 font-bold lg:mr-12" style="font-family: Gilbert Qualifi Demo;">PANDORA</span>The sick brain behind the Unholy Godesses concept and design.</li>
+					<li><span class="text-red-500 font-bold lg:mr-12" style="font-family: Gilbert Qualifi Demo;">SOULEATER</span>Loves hearing the sound of keyboard strokes.</li>
+					<li><span class="text-red-500 font-bold lg:mr-12" style="font-family: Gilbert Qualifi Demo;">CHKOUMOUN</span>Fed up with being cursed so he became the curse itself.</li>
+				</ul>
+			</div>
+	<script>
+      /* Optional Javascript to close the radio button version by clicking it again */
+      var myRadios = document.getElementsByName('tabs2');
+      var setCheck;
+      var x = 0;
+      for(x = 0; x < myRadios.length; x++){
+          myRadios[x].onclick = function(){
+              if(setCheck != this){
+                   setCheck = this;
+              }else{
+                  this.checked = false;
+                  setCheck = null;
+          }
+          };
+      }
+	const btn = document.querySelector("button.mobile-menu-button");
+	const menu = document.querySelector(".mobile-menu");
+
+	btn.addEventListener("click", () => {
+		menu.classList.toggle("hidden");
+	});
+
+	// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    document.getElementById("navbar").style.padding = "10px 10px";
+    document.getElementById("logo").style.width = "50px";
+    document.getElementById("logo").style.height = "50px";
+  } else {
+    document.getElementById("navbar").style.padding = "10px 10px";
+    document.getElementById("logo").style.width = "150px";
+    document.getElementById("logo").style.height = "150px";
+  }
+}
+	</script>
+</body>
+
+</html>
